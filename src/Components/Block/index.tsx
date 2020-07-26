@@ -1,11 +1,18 @@
 import React from 'react'
 import './Block.css'
 
-const Block = () =>  {
+import BlockTreeModel from '../../Models/Tree/Tree.model'
+import Tree from '../Tree'
 
+interface BlockData {
+    Tree?: BlockTreeModel
+}
+
+const Block = (blockData : BlockData) =>  {
+    
     return(
         <div className="Block">
-            <div className={`Tree Tree`+ Math.round(Math.random() * (7 - 1) + 1)}></div>
+           {blockData.Tree &&  <Tree Tree={blockData.Tree} />}
         </div>
     )
 
