@@ -9,7 +9,7 @@ import AppHeader from './Components/AppHeader';
 function App() {
 
   const [blockList, setBlockList] = useState<BlockModel[]>([])
-  const appDiv = useRef(null)
+  const appDiv = useRef<HTMLDivElement>(null)
 
   const populateBlocks = () => {
     
@@ -31,6 +31,15 @@ function App() {
     } while( (max % 10 === 0) === false )
 
     setBlockList(templist)
+    scrollDown()
+  }
+
+  const scrollDown = () => {
+    const divToScroll = appDiv.current
+   
+    if(divToScroll){
+        divToScroll.scrollTop = divToScroll.scrollHeight
+    }
 
   }
 
@@ -38,6 +47,7 @@ function App() {
     if(!blockList.length){
       populateBlocks()
     }
+    scrollDown()
   })
 
   return (
