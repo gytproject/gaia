@@ -5,10 +5,12 @@ import Block from './Components/Block';
 import BlockModel from './Models/Block/Block.model';
 import BlockTreeModel from './Models/Tree/Tree.model';
 import AppHeader from './Components/AppHeader';
+import PlantBox from './Components/PlantBox';
 
 function App() {
 
   const [blockList, setBlockList] = useState<BlockModel[]>([])
+  const [showPlantBox, setShowPlantBox] = useState(false)
   const appDiv = useRef<HTMLDivElement>(null)
 
   const populateBlocks = () => {
@@ -52,7 +54,10 @@ function App() {
 
   return (
     <>
-      <AppHeader/>
+      <PlantBox showPlantBox={showPlantBox} setShowPlantBox={setShowPlantBox}  />
+
+      <AppHeader setShowPlantBox={setShowPlantBox} />
+      
       <div className="App" ref={appDiv}>
         { blockList.map(block =>  <Block Tree={block.Tree} />) }
       </div>
