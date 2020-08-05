@@ -94,6 +94,11 @@
         margin-top: 5vh;
     }
 
+    
+    #ClosePlantBox{
+        right: -.7em;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
