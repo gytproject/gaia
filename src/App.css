@@ -8,6 +8,10 @@
   overflow-x: hidden;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
+  background-image: url('/sky/sky2.jpg');
+  background-position: bottom bottom;
+  background-size: cover;
 }
 
 .App::-webkit-scrollbar{

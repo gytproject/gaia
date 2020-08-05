@@ -10,8 +10,10 @@ interface BlockData {
 
 const Block = (blockData : BlockData) =>  {
     
+    const typeOfBlockClass = `Type${Math.floor(Math.random() * (6 - 1) + 1)}`
+
     return(
-        <div className="Block">
+        <div className={`Block ${typeOfBlockClass}`}>
            {blockData.Tree &&  <Tree Tree={blockData.Tree} />}
         </div>
     )

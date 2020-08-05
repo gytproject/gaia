@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
+import './base64.css';
 
 import Block from './Components/Block';
 import BlockModel from './Models/Block/Block.model';

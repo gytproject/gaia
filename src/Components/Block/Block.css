@@ -5,17 +5,38 @@
     text-align: center;
     position: static;
     z-index: 0;
-    
-    background-image: url('/grass.jpg');
     background-position: center center;
     background-size: contain;
-
     cursor: pointer;
 }
 
 .Block:hover .Tree{
     margin-top: -55%;
     transition: .2s;
+}
+
+.Type1{
+    background-image: url('/backgrounds/bg001.png');
+}
+
+.Type2{
+    background-image: url('/backgrounds/bg002.png');
+}
+
+.Type3{
+    background-image: url('/backgrounds/bg003.png');
+}
+
+.Type4{
+    background-image: url('/backgrounds/bg004.png');
+}
+
+.Type5{
+    background-image: url('/backgrounds/bg005.png');
+}
+
+.Type6{
+    background-image: url('/backgrounds/bg006.png');
 }
 
 @media only screen and (max-width: 600px) {

@@ -24,7 +24,7 @@ const PlantBox = ({ showPlantBox, setShowPlantBox } : PlantBoxData) => {
                         <div id="ClosePlantBox" onClick={e => setShowPlantBox(false)}/>
                         
                         <div id="InsidePlantBox">
-                            <div id="GreenRibbon"><div id="Text">Plante sua Árvore</div></div>
+                            <div id="GreenRibbon" className="green-ribbon"><div id="Text">Plante sua Árvore</div></div>
                         </div>
                     </div>
                 </Grow>
