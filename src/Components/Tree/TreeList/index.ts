@@ -5,6 +5,8 @@ import Tree4 from "./Tree4";
 import Tree5 from "./Tree5";
 import Tree6 from "./Tree6";
 import Tree7 from "./Tree7";
+import Tree8 from "./Tree8";
+import Tree9 from "./Tree9";
 
 const TreeListData = [
     { id: 1, element: Tree1 },
@@ -14,6 +16,8 @@ const TreeListData = [
     { id: 5, element: Tree5 },
     { id: 6, element: Tree6 },
     { id: 7, element: Tree7 },
+    { id: 8, element: Tree8 },
+    { id: 9, element: Tree9 },
 ]
 
 export default class TreeList {

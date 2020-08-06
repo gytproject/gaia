@@ -21,7 +21,7 @@ function App() {
     let max = 157
 
     for(let i = 1; i<= max; i++){
-      let treeType = Math.round(Math.random() * (7 - 1) + 1)
+      let treeType = Math.round(Math.random() * (9 - 1) + 1)
       let tempTree = new BlockTreeModel(i.toString(), 'Matheus de Barros Fagionato', treeType)
       let temBlock = new BlockModel(tempTree)
       templist.push(temBlock)
