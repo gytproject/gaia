@@ -8,10 +8,10 @@
     background-position: center center;
     background-size: contain;
     cursor: pointer;
+    background-color: red !important;
 }
 
 .Block:hover .Tree{
-    margin-top: -55%;
     transition: .2s;
 }
 
